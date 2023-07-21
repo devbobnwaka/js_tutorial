@@ -1,20 +1,54 @@
+/***
+ * LOOPS AND ITERATIONS
+ */
+// for (var i = 0; i < 10; i++ ){
+//     console.log(i+1);
+// }
+
+var names = ["BOb", 1999, "Mark", "Jane"]
+//for loop
+// for (var i = 0; i < names.length; i++ ){
+//     console.log(names[i]);
+// }
+
+// While loop
+// var i = 0;
+// while(i < names.length){
+//     console.log(names[i]);
+//     i++
+// }
+
+//continue and break statements
+for(var i = 0; i<names.length; i++){
+    if(typeof names[i] !== 'string') continue;
+    console.log(names[i]);
+}
+
+for(var i = 0; i<names.length; i++){
+    if(typeof names[i] !== 'string') break            ;
+    console.log(names[i]);
+}
+
+
+
+
 /**
  * OBJECTS AND PROPERTIES
  */
-const d = new Date();
-var year = d.getFullYear();
-var person = {
-    firstName: 'John',
-    lastName: 'Smith',
-    birthYear: 1990,
-    family: ['Jane', 'Mark', 'Bob', 'Emily'],
-    job: 'teacher',
-    isMarried: false,
-    calAge: function(birthYear){
-        age = year - this.birthYear
-    }
-}
-console.log(person.calAge);
+// const d = new Date();
+// var year = d.getFullYear();
+// var person = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false,
+//     calAge: function(birthYear){
+//         age = year - this.birthYear
+//     }
+// }
+// console.log(person.calAge);
 /***
  * ARRAYS - 
  */

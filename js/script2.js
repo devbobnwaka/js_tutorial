@@ -1,3 +1,25 @@
+var person1 = {
+    first_name: "John",
+    last_name:"Smith",
+    mass:50,
+    height:5.7,
+    calBMI:function(){
+        this.mass / (this.height * this.height)
+    }
+}
+var person2 = {
+    first_name: "John",
+    last_name:"Smith",
+    mass:50,
+    height:5.7,
+    calBMI:function(){
+        this.bmi = this.mass / (this.height * this.height);        
+        return this.bmi;
+    }
+}
+console.log(person2.calBMI());
+
+
 // var bills = [124, 48, 268];
 // var tip = []
 // var amount_paid = []
